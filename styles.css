@@ -19,3 +19,24 @@ p {
         width: 325px; /* Size of the images */
         height: auto;
       }
+.swipe-images img {
+  width: 100%; /* Images take up 100% width of the container (scalable) */
+  flex-shrink: 0; /* Prevent images from shrinking */
+  object-fit: cover; /* Ensure the images fill the space and maintain aspect ratio */
+}
+
+/* Hide scrolling on non-mobile devices */
+@media screen and (max-width: 768px) {
+  .image-container {
+    overflow-x: auto; /* Allows horizontal scrolling on mobile */
+  }
+
+  .swipe-images {
+    display: flex;
+    flex-wrap: nowrap; /* Ensure images stay in a single line */
+  }
+
+  .swipe-images img {
+    width: 100vw; /* Make each image take the full width of the screen */
+  }
+}
