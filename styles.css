@@ -16,7 +16,7 @@ p {
       }
   
       .image-container img {
-        width: 350px; /* Size of the images */
+        width: 325px; /* Size of the images */
         height: auto;
       }
 /* Flexbox Layout for Larger Screens */
