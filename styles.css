@@ -1,0 +1,21 @@
+
+
+body {
+    background-color: rgb(252, 242, 250);
+  }
+
+h1 {text-align: center;
+color: palevioletred}
+
+p {
+    color: black;}
+
+ .image-container {
+        display: flex; /* Place images side by side */
+        gap: 10 px; /* Space between the images */
+      }
+  
+      .image-container img {
+        width: 350px; /* Size of the images */
+        height: auto;
+      }
