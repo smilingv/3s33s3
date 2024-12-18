@@ -19,3 +19,22 @@ p {
         width: 350px; /* Size of the images */
         height: auto;
       }
+/* Flexbox Layout for Larger Screens */
+@media screen and (min-width: 768px) {
+  .image-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+  }
+
+  .image-container img {
+    width: 30%; /* Allows three images to be displayed in a row */
+  }
+}
+
+/* Larger Screens (e.g., tablets and above) */
+@media screen and (min-width: 1024px) {
+  .image-container {
+    justify-content: space-around;
+  }
+}
